@@ -1,0 +1,75 @@
+.filter_container {
+  overflow-y: auto;
+  position: relative;
+  padding: 1em;
+
+  .filter_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    position: relative;
+
+    .input-range {
+      align-items: center;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      width: 100%;
+
+      input {
+        box-shadow: none;
+        min-width: 200px;
+        width: 80%;
+      }
+    }
+
+    label {
+      font-weight: bold;
+      margin: 5px 0;
+      text-align: left;
+    }
+
+    input,
+    select,
+    textarea {
+      border: solid 1px #000;
+      border-radius: 20px;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+      padding: 0.5em;
+    }
+
+    textarea {
+      margin-bottom: 1em;
+      max-height: 150px;
+      max-width: 100%;
+      min-height: 150px;
+      min-width: 100%;
+    }
+
+    input[range] {
+      background-color: red;
+    }
+  }
+
+  .btn_filter_section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .btn_filter {
+      background-color: #fff;
+      border: solid 1px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-bottom: 2em;
+      min-width: 120px;
+      padding: 1em;
+      width: 40%;
+
+      &.apply {
+        background-color: #17202a;
+        color: #fff;
+      }
+    }
+  }
+}

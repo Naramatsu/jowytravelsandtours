@@ -1,0 +1,18 @@
+@import 'App.style.scss';
+@import 'components/ButtonSettings/ButtonSettings.style.scss';
+@import 'components/Filter/Filter.style.scss';
+@import 'components/Header/Header.style.scss';
+@import 'components/Items/Items.style.scss';
+@import 'components/Inputs/Inputs.style.scss';
+@import 'components/SectionTemplate/SectionTemplate.style.scss';
+@import 'components/TableHeader/TableHeader.style.scss';
+
+body {
+  background-color: #ededed;
+  color: #000;
+}
+
+.dark {
+  background-color: #2f2d2d !important;
+  color: #fff !important;
+}

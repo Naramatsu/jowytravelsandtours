@@ -1,0 +1,16 @@
+{
+  "es": [
+    { "label": "hospedaje", "link": "hospedaje" },
+    { "label": "pasadias", "link": "pasadias" },
+    { "label": "tures", "link": "tures" },
+    { "label": "transportes", "link": "transportes" },
+    { "label": "embarcaciones", "link": "embarcaciones" }
+  ],
+  "en": [
+    { "label": "hosting", "link": "hospedaje" },
+    { "label": "day-pass", "link": "pasadias" },
+    { "label": "tours", "link": "tures" },
+    { "label": "transports", "link": "transportes" },
+    { "label": "boats", "link": "embarcaciones" }
+  ]
+}

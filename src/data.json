@@ -1,0 +1,184 @@
+{
+  "es": {
+    "hospedaje": {
+      "title": "Hospedaje",
+      "description": "Espanol Hospedaje - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "categories": [
+        "Apartamentos",
+        "Casas",
+        "Habitaciones",
+        "Cabanas",
+        "Casafincas"
+      ],
+      "items": [
+        {
+          "id": "hos_01",
+          "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
+          "name": "Nombre Hotel 1",
+          "location": "Bocagrande",
+          "capacity": [2, 4],
+          "nearTo": ["Playa", "Juan Valdez", "etc"],
+          "category": "Apartamentos",
+          "details": [
+            "Aire acondicionado",
+            "Abanicos",
+            "2 banos",
+            "2 camas grandes"
+          ]
+        },
+        {
+          "id": "hos_02",
+          "name": "Nombre Hotel 2",
+          "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
+          "location": "El lagito",
+          "capacity": [4, 6],
+          "nearTo": ["Playa", "etc"],
+          "category": "Casas",
+          "details": [
+            "Aire acondicionado",
+            "Abanicos",
+            "2 banos",
+            "2 camas grandes"
+          ]
+        },
+        {
+          "id": "hos_03",
+          "name": "Nombre Hotel 3",
+          "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
+          "location": "El lagito",
+          "capacity": [4, 6],
+          "nearTo": ["Playa", "etc"],
+          "category": "Casas",
+          "details": [
+            "Aire acondicionado",
+            "Abanicos",
+            "2 banos",
+            "2 camas grandes"
+          ]
+        }
+      ]
+    },
+    "pasadias": {
+      "title": "Pasadias",
+      "description": "Espanol Pasadias - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "categories": [
+        "Apartamentos",
+        "Casas",
+        "Habitaciones",
+        "Cabanas",
+        "Casafincas"
+      ],
+      "items": []
+    },
+    "tures": {
+      "title": "Tures",
+      "description": "Espanol Tures - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "categories": ["City Tour", "Barranquilla", "Santa Marta"],
+      "items": []
+    },
+    "transportes": {
+      "title": "Transportes",
+      "description": "Espanol Transportes - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "categories": ["Servicio privado", "Vans", "Renta de vehiculos", "Buses"],
+      "items": []
+    },
+    "embarcaciones": {
+      "title": "Embarcaciones",
+      "description": "Espanol Embarcaciones - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "categories": ["Yates", "Lanchas", "Veleros"],
+      "items": []
+    },
+    "aboutus": {}
+  },
+  "en": {
+    "hospedaje": {
+      "title": "Hosting",
+      "description": "English Hosting- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "categories": [
+        "Apartaments",
+        "Houses",
+        "Rooms",
+        "Cabanas",
+        "Casafincas"
+      ],
+      "items": [
+        {
+          "id": "hos_01",
+          "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
+          "name": "Hotel Name 1",
+          "location": "Bocagrande",
+          "capacity": [2, 4],
+          "nearTo": ["Playa", "Juan Valdez", "etc"],
+          "category": "Apartamentos",
+          "details": [
+            "Aire acondicionado",
+            "Abanicos",
+            "2 banos",
+            "2 camas grandes"
+          ]
+        },
+        {
+          "id": "hos_02",
+          "name": "Hotel Name 2",
+          "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
+          "location": "El lagito",
+          "capacity": [4, 6],
+          "nearTo": ["Playa", "etc"],
+          "category": "Casas",
+          "details": [
+            "Aire acondicionado",
+            "Abanicos",
+            "2 banos",
+            "2 camas grandes"
+          ]
+        },
+        {
+          "id": "hos_03",
+          "name": "Hotel Name 3",
+          "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
+          "location": "El lagito",
+          "capacity": [4, 6],
+          "nearTo": ["Playa", "etc"],
+          "category": "Casas",
+          "details": [
+            "Aire acondicionado",
+            "Abanicos",
+            "2 banos",
+            "2 camas grandes"
+          ]
+        }
+      ]
+    },
+    "pasadias": {
+      "title": "Pass-day",
+      "description": "English Pass-day - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "categories": [
+        "Apartamentos",
+        "Casas",
+        "Habitaciones",
+        "Cabanas",
+        "Casafincas"
+      ],
+      "items": []
+    },
+    "tures": {
+      "title": "Tours",
+      "description": "English Tours - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "categories": ["City Tour", "Barranquilla", "Santa Marta"],
+      "items": []
+    },
+    "transportes": {
+      "title": "Transports",
+      "description": "English Transports - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "categories": ["Private Service", "Vans", "Vehicles", "Buses"],
+      "items": []
+    },
+    "embarcaciones": {
+      "title": "Ships",
+      "description": "English Ships - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "categories": ["Yates", "Lanchs", "Boats"],
+      "items": []
+    },
+    "aboutus": {}
+  }
+}

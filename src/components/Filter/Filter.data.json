@@ -1,0 +1,42 @@
+{
+  "es": {
+    "title": "Filtros",
+    "btnApply": "Aplicar",
+    "btnReset": "Restablecer",
+    "hospedaje": [
+      { "inputname": "hotel_name", "inputtype": "input", "label": "Nombre" },
+      {
+        "inputname": "location",
+        "inputtype": "combo",
+        "label": "Localizacion"
+      },
+      { "inputname": "capacity", "inputtype": "range", "label": "Capacidad" },
+      {
+        "inputname": "nro_rooms",
+        "inputtype": "number",
+        "label": "Nro de Habitaciones"
+      },
+      { "inputname": "details", "inputtype": "textarea", "label": "Detalles" }
+    ]
+  },
+  "en": {
+    "title": "Filters",
+    "btnApply": "Apply",
+    "btnReset": "Reset",
+    "hospedaje": [
+      { "inputname": "hotel_name", "inputtype": "input", "label": "Name" },
+      {
+        "inputname": "location",
+        "inputtype": "combo",
+        "label": "Location"
+      },
+      { "inputname": "capacity", "inputtype": "range", "label": "Capacity" },
+      {
+        "inputname": "nro_rooms",
+        "inputtype": "number",
+        "label": "Nro Rooms"
+      },
+      { "inputname": "details", "inputtype": "textarea", "label": "Details" }
+    ]
+  }
+}

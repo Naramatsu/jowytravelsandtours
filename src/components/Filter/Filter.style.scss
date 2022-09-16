@@ -1,0 +1,16 @@
+.filter-section {
+  height: 500px;
+  position: sticky;
+  top: 100px;
+}
+
+.filter_container {
+  height: calc(100vh - 150px);
+  width: 100%;
+}
+
+.table__header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}

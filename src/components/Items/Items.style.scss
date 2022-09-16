@@ -1,0 +1,99 @@
+.jtyt__item {
+  height: auto;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  padding: 1em;
+  position: relative;
+  width: 100%;
+
+  &.dark .classic .kromac-card .kromac-card-caption {
+    background-color: #2f2d2d;
+    color: #fff;
+  }
+
+  .item__whatsapp {
+    background: #fff;
+    border: none;
+    border-radius: 0 0 20px 20px;
+    bottom: -46px;
+    box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.5);
+    left: 0;
+    position: absolute;
+    transition: 1s all ease-in-out;
+    width: 100%;
+    z-index: 1000;
+
+    & > button:nth-child(1) {
+      border-right: solid 1px #8b8b8b;
+      border-radius: 0 0 0 20px;
+      color: #196f3d;
+
+      &:hover {
+        background-color: #196f3d !important;
+        color: #fff;
+        text-shadow: 0 0 15 rgba(0, 0, 0, 0.5);
+      }
+    }
+    & > button:nth-child(2) {
+      border-left: solid 1px #8b8b8b;
+      border-radius: 0 0 20px 0;
+      color: #5b2c6f;
+
+      &:hover {
+        background-color: #5b2c6f !important;
+        text-shadow: 0 0 15 rgba(0, 0, 0, 0.5);
+        color: #fff;
+      }
+    }
+
+    .item__whatsapp__btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      height: 45px;
+      padding: 0.5em 1em;
+    }
+  }
+
+  .classic .kromac-card {
+    border-radius: 20px 20px 0 0;
+    margin-top: 0;
+    max-width: 100%;
+    min-width: 100%;
+
+    .kromac-card-caption .card-text {
+      max-height: fit-content;
+      padding: 0.5em 1em;
+    }
+
+    .kromac-card-image {
+      border-radius: 20px 20px 0 0;
+    }
+  }
+}
+
+.item__info {
+  display: flex;
+  gap: 20px;
+  text-align: left;
+
+  button.item__view-galery {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    text-shadow: 0 0 5px #000;
+    top: -35px;
+  }
+
+  section {
+    font-size: 12px;
+
+    p {
+      margin-bottom: 0.5em !important;
+    }
+  }
+}
