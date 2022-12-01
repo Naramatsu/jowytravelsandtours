@@ -18,7 +18,7 @@ const Header = () => {
         .filter((item, index) => index < 3)
         .map((item, index) => (
           <Link
-            to={item.link}
+            to={`/${item.link}`}
             key={index}
             className={isActiveTab(pathname, item.link)}
           >
@@ -34,7 +34,7 @@ const Header = () => {
         .filter((item, index) => index > 2)
         .map((item, index) => (
           <Link
-            to={item.link}
+            to={`/${item.link}`}
             key={index}
             className={isActiveTab(pathname, item.link)}
           >

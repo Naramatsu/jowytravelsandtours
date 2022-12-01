@@ -6,8 +6,8 @@ import { getAllTabs } from './utils/dataGrouper';
 import Header from './components/Header';
 import Home from './components/Home';
 import Menu from 'kromac-ui-18/dist/Menu';
-import SectionTemplate from './components/SectionTemplate';
 import './App.style.scss';
+import Routes from './components/Routes';
 
 const App = () => {
   const { theme, language } = useContext(AppContext);
@@ -27,7 +27,7 @@ const App = () => {
           <Home />
         </Route>
         <Route strict path="/:some">
-          <SectionTemplate />
+          <Routes />
         </Route>
         <ButtonSettings />
       </Router>
