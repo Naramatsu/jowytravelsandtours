@@ -9,6 +9,25 @@
   position: fixed;
   right: 20px;
   width: 50px;
+  z-index: 1000;
+
+  img {
+    filter: contrast(0);
+    padding: 0.5em;
+  }
+}
+
+.btn-close-modal-settings {
+  background: #000;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  height: 24px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 24px;
 }
 
 .modal-settings {
@@ -22,19 +41,6 @@
   right: 20px;
   width: fit-content;
   z-index: 1000;
-
-  .btn-close-modal-settings {
-    background: #000;
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    height: 24px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 24px;
-  }
 
   .section-settings {
     text-align: center;

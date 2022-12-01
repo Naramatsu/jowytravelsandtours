@@ -52,13 +52,15 @@ const SectionTemplate = () => {
             tabs={allData.categories}
             handlerChange={handlerChangeCategory}
           />
-          <section className={`items__table kromac-scroll ${theme}`}>
-            {items.length ? (
-              items.map((item, index) => <Items item={item} key={index} />)
-            ) : (
-              <h5>No options found.</h5>
-            )}
-          </section>
+          {items.length ? (
+            <section className={`items__table kromac-scroll ${theme}`}>
+              {items.map((item, index) => (
+                <Items item={item} key={index} />
+              ))}
+            </section>
+          ) : (
+            <h5 className="no__options__found">No options found.</h5>
+          )}
         </Panel>
       </section>
       <br />

@@ -3,13 +3,17 @@
   margin: 0 !important;
   margin-top: 70px !important;
 
+  &.light {
+    .kromac-grid {
+      background-color: #fff !important;
+    }
+  }
+
   h1 {
     margin-bottom: 1.25em !important;
   }
 
   .kromac-grid {
-    background-color: #fff;
-
     div {
       height: 300px;
 

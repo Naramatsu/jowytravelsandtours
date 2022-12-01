@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Grid from 'kromac-ui-18/dist/Grid';
 import './AboutUs.style.scss';
+import { AppContext } from '../../context';
 
 const AboutUs = () => {
+  const { theme } = useContext(AppContext);
   return (
-    <section className="panel-section aboutus">
+    <section className={`panel-section aboutus ${theme}`}>
       <h1>Sobre Nosotros</h1>
       <Grid columns={2}>
         <div>

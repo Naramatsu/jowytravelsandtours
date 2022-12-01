@@ -50,9 +50,9 @@ const Items = ({ item }) => {
             <section className="item__show__gallery">
               <button
                 onClick={() => setShowGallery(false)}
-                className="button float"
+                className="btn-close-modal-settings"
               >
-                x
+                X
               </button>
               <Slider content={[{ img: imgPreview }]} />
             </section>

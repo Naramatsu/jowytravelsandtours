@@ -10,7 +10,7 @@ const ButtonSettings = () => {
   return (
     <>
       <button className="btn-settings" onClick={() => setIsShowModal(true)}>
-        icono
+        <img src="Setting_icon.png" alt="button_settings" />
       </button>
       {isShowModal && <ModalSettings onHide={hideModal} />}
     </>

@@ -5,8 +5,12 @@
 }
 
 .filter_container {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 180px);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
 }
 
 .table__header {

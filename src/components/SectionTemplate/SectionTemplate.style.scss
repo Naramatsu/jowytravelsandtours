@@ -33,6 +33,7 @@
       max-height: 650px;
       overflow: auto;
       padding: 0 !important;
+      height: fit-content;
     }
   }
 }
@@ -41,10 +42,15 @@
   display: grid;
   grid-column: 3;
   grid-template-columns: 1fr 1fr 1fr;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 180px);
   justify-items: center;
   overflow-y: scroll;
   width: 100%;
+}
+
+.no__options__found {
+  margin: 1em;
+  justify-content: center;
 }
 
 @media (max-width: 1300px) {

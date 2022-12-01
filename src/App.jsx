@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Menu from 'kromac-ui-18/dist/Menu';
 import './App.style.scss';
 import Routes from './components/Routes';
+import Footer from './components/Footer';
 
 const App = () => {
   const { theme, language } = useContext(AppContext);
@@ -30,6 +31,7 @@ const App = () => {
           <Routes />
         </Route>
         <ButtonSettings />
+        <Footer />
       </Router>
     </main>
   );

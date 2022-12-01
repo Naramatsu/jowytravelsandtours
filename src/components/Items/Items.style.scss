@@ -96,24 +96,7 @@
       margin-bottom: 0.5em !important;
     }
   }
-  .button.float {
-    position: fixed;
-    background: #fff;
-    color: #000;
-    z-index: 1;
-    border: none;
-    width: 50px;
-    border-radius: 50%;
-    height: 50px;
-    font-size: 32px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-  }
+
   .item__show__gallery {
     position: fixed;
     z-index: 100000000;
@@ -125,5 +108,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .btn-close-modal-settings {
+      background: #fff;
+      color: #000;
+      opacity: 0.5;
+      right: 20px;
+      top: 20px;
+    }
   }
 }
