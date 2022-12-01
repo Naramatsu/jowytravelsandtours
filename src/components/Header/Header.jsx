@@ -3,6 +3,7 @@ import { AppContext } from '../../context';
 import lan from './Header.data.json';
 import { Link } from 'react-router-dom';
 import useFormatLocation from '../../hooks/useFormatLocation';
+import './Header.style.scss';
 
 const isActiveTab = (path, tab) => (path === tab ? 'active' : '');
 
@@ -40,7 +41,7 @@ const Header = () => {
             <p>{item.label}</p>
           </Link>
         ))}
-      <Link to="aboutus" className="header__btn-about">
+      <Link to="/info/aboutus" className="header__btn-about">
         {appLanguage === 'es' ? <p>Sobre Nosotros</p> : <p>About us</p>}
       </Link>
     </header>

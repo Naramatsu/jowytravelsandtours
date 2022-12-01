@@ -1,12 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { addToCombo } from '../../utils/combo';
-import Card from 'kromac-ui/dist/Card';
+import Card from 'kromac-ui-18/dist/Card';
+import Slider from 'kromac-ui-18/dist/Slider';
 import lan from './Items.data.json';
 import { AppContext } from '../../context';
+import './Items.style.scss';
 
 const Items = ({ item }) => {
   const { language: appLanguage, theme } = useContext(AppContext);
   const language = lan[appLanguage];
+  const [showGallery, setShowGallery] = useState(false);
   const {
     id,
     name,
@@ -18,16 +21,16 @@ const Items = ({ item }) => {
     category,
   } = item;
 
-  const handlerAddToCombo = item => {
+  const handlerAddToCombo = (item) => {
     addToCombo(item);
   };
 
-  const handlerAskInWapp = id => {
+  const handlerAskInWapp = (id) => {
     const url = new URL('https://wa.me/573103504215');
     const message = `${language.urlMessage}
     (${category})
     ${id} - ${name},
-    capacity: ${capacity.join(' - ')}
+    capacity: ${capacity}
     `;
     url.searchParams.set('text', message);
     window.open(url.href, '_blank');
@@ -37,7 +40,23 @@ const Items = ({ item }) => {
     <section className={`jtyt__item ${theme}`}>
       <Card image={imgPreview} title={name}>
         <section className="item__info">
-          <button className="item__view-galery">{language.viewGallery}</button>
+          <button
+            onClick={() => setShowGallery(true)}
+            className="item__view-galery"
+          >
+            {language.viewGallery}
+          </button>
+          {showGallery && (
+            <section className="item__show__gallery">
+              <button
+                onClick={() => setShowGallery(false)}
+                className="button float"
+              >
+                x
+              </button>
+              <Slider content={[{ img: imgPreview }]} />
+            </section>
+          )}
           <section className="item__info__title">
             {language.info.map((item, index) => (
               <p key={index}>
@@ -49,6 +68,7 @@ const Items = ({ item }) => {
             <p>{name}</p>
             <p>{location}</p>
             <p>
+              {language.upTo}
               {capacity} {language.persons}
             </p>
             <p>{nearTo.join(', ')}</p>

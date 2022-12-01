@@ -1,6 +1,7 @@
 import React from 'react';
+import './Inputs.style.scss';
 
-const Inputs = props => {
+const Inputs = (props) => {
   const { inputtype } = props;
   switch (inputtype) {
     case 'input':
@@ -40,7 +41,7 @@ const ComboBox = ({ name, value, options, onChange, ...rest }) => (
     value={value || 'all'}
     {...rest}
   >
-    <option value="all">All</option>
+    <option value="">All</option>
     {options.map((option, index) => (
       <option key={index} value={option}>
         {option}
@@ -57,7 +58,7 @@ const Range = ({ name, value, onChange, ...rest }) => (
       name={name}
       value={value}
       onChange={onChange}
-      min="0"
+      min="1"
       max="50"
       {...rest}
     />

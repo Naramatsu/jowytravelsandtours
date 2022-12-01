@@ -57,7 +57,7 @@
   }
 
   .classic .kromac-card {
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0 !important;
     margin-top: 0;
     max-width: 100%;
     min-width: 100%;
@@ -95,5 +95,35 @@
     p {
       margin-bottom: 0.5em !important;
     }
+  }
+  .button.float {
+    position: fixed;
+    background: #fff;
+    color: #000;
+    z-index: 1;
+    border: none;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .item__show__gallery {
+    position: fixed;
+    z-index: 100000000;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    backdrop-filter: brightness(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

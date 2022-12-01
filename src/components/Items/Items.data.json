@@ -2,7 +2,8 @@
   "es": {
     "viewGallery": "Ver Galeria",
     "info": ["Nombre", "Ubicacion", "Capacidad", "Cerca de", "Detalles"],
-    "persons": "personas",
+    "upTo": "hasta ",
+    "persons": "persona(s)",
     "btnAsk": "Preguntar",
     "btnCombo": "Add al combo",
     "urlMessage": "Hola me interesaria saber un poco mas respecto a este producto:"
@@ -10,7 +11,8 @@
   "en": {
     "viewGallery": "View Gallery",
     "info": ["Name", "Ubication", "Capacity", "Near", "Details"],
-    "persons": "persons",
+    "upTo": "up to ",
+    "persons": "person(s)",
     "btnAsk": "Ask for it",
     "btnCombo": "Add to combo",
     "urlMessage": "Hello I wonder know more about this product:"

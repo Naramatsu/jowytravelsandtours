@@ -6,14 +6,14 @@ import {
 
 const useTheme = () => {
   const [theme, setTheme] = useState(
-    getItemFromLocalStorage('theme') || 'light',
+    getItemFromLocalStorage('theme') || 'light'
   );
 
   useEffect(() => {
     setTheme(getItemFromLocalStorage('theme'));
-  });
+  }, [setTheme]);
 
-  const setNewTheme = theme => {
+  const setNewTheme = (theme) => {
     saveItemInLocalStorage('theme', theme);
     setTheme(theme);
   };

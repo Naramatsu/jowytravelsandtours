@@ -6,14 +6,14 @@ import {
 
 const useLanguage = () => {
   const [language, setLan] = useState(
-    getItemFromLocalStorage('language') || 'es',
+    getItemFromLocalStorage('language') || 'es'
   );
 
   useEffect(() => {
     setLan(getItemFromLocalStorage('language'));
-  });
+  }, [setLan]);
 
-  const setLanguage = language => {
+  const setLanguage = (language) => {
     saveItemInLocalStorage('language', language);
     setLan(language);
   };

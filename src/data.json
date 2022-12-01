@@ -16,7 +16,7 @@
           "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
           "name": "Nombre Hotel 1",
           "location": "Bocagrande",
-          "capacity": [2, 4],
+          "capacity": 4,
           "nearTo": ["Playa", "Juan Valdez", "etc"],
           "category": "Apartamentos",
           "details": [
@@ -31,7 +31,7 @@
           "name": "Nombre Hotel 2",
           "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
           "location": "El lagito",
-          "capacity": [4, 6],
+          "capacity": 6,
           "nearTo": ["Playa", "etc"],
           "category": "Casas",
           "details": [
@@ -46,7 +46,7 @@
           "name": "Nombre Hotel 3",
           "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
           "location": "El lagito",
-          "capacity": [4, 6],
+          "capacity": 6,
           "nearTo": ["Playa", "etc"],
           "category": "Casas",
           "details": [
@@ -68,7 +68,53 @@
         "Cabanas",
         "Casafincas"
       ],
-      "items": []
+      "items": [
+        {
+          "id": "hos_01",
+          "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
+          "name": "Nombre Hotel 1",
+          "location": "Bocagrande",
+          "capacity": 4,
+          "nearTo": ["Playa", "Juan Valdez", "etc"],
+          "category": "Apartamentos",
+          "details": [
+            "Aire acondicionado",
+            "Abanicos",
+            "2 banos",
+            "2 camas grandes"
+          ]
+        },
+        {
+          "id": "hos_02",
+          "name": "Nombre Hotel 2",
+          "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
+          "location": "El lagito",
+          "capacity": 6,
+          "nearTo": ["Playa", "etc"],
+          "category": "Casas",
+          "details": [
+            "Aire acondicionado",
+            "Abanicos",
+            "2 banos",
+            "2 camas grandes"
+          ]
+        },
+        {
+          "id": "hos_03",
+          "name": "Nombre Hotel 3",
+          "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
+          "location": "El lagito",
+          "capacity": 6,
+          "nearTo": ["Playa", "etc"],
+          "category": "Casas",
+          "details": [
+            "Aire acondicionado",
+            "Abanicos",
+            "2 banos",
+            "2 camas grandes"
+          ]
+        }
+      ]
     },
     "tures": {
       "title": "Tures",
@@ -94,20 +140,14 @@
     "hospedaje": {
       "title": "Hosting",
       "description": "English Hosting- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
-      "categories": [
-        "Apartaments",
-        "Houses",
-        "Rooms",
-        "Cabanas",
-        "Casafincas"
-      ],
+      "categories": ["Apartaments", "Houses", "Rooms", "Cabanas", "Casafincas"],
       "items": [
         {
           "id": "hos_01",
           "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
           "name": "Hotel Name 1",
           "location": "Bocagrande",
-          "capacity": [2, 4],
+          "capacity": 4,
           "nearTo": ["Playa", "Juan Valdez", "etc"],
           "category": "Apartamentos",
           "details": [
@@ -122,7 +162,7 @@
           "name": "Hotel Name 2",
           "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
           "location": "El lagito",
-          "capacity": [4, 6],
+          "capacity": 6,
           "nearTo": ["Playa", "etc"],
           "category": "Casas",
           "details": [
@@ -137,7 +177,7 @@
           "name": "Hotel Name 3",
           "imgPreview": "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg",
           "location": "El lagito",
-          "capacity": [4, 6],
+          "capacity": 6,
           "nearTo": ["Playa", "etc"],
           "category": "Casas",
           "details": [

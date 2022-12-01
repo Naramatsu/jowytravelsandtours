@@ -1,16 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
-import 'kromac-ui/dist/index.css';
-import './css/index.style.css';
-import './css/index.style.css.map';
+import 'kromac-ui-18/src/css/style.css';
 import Context from './context/Context';
+import './index.style.scss';
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root'));
+root.render(
   <>
     <Context>
       <App />
     </Context>
-  </>,
-  document.getElementById('root'),
+  </>
 );

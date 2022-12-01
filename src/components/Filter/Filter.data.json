@@ -4,18 +4,23 @@
     "btnApply": "Aplicar",
     "btnReset": "Restablecer",
     "hospedaje": [
-      { "inputname": "hotel_name", "inputtype": "input", "label": "Nombre" },
+      { "inputname": "name", "inputtype": "input", "label": "Nombre" },
       {
         "inputname": "location",
         "inputtype": "combo",
         "label": "Localizacion"
       },
       { "inputname": "capacity", "inputtype": "range", "label": "Capacidad" },
+      { "inputname": "details", "inputtype": "textarea", "label": "Detalles" }
+    ],
+    "pasadias": [
+      { "inputname": "name", "inputtype": "input", "label": "Nombre" },
       {
-        "inputname": "nro_rooms",
-        "inputtype": "number",
-        "label": "Nro de Habitaciones"
+        "inputname": "location",
+        "inputtype": "combo",
+        "label": "Localizacion"
       },
+      { "inputname": "capacity", "inputtype": "range", "label": "Capacidad" },
       { "inputname": "details", "inputtype": "textarea", "label": "Detalles" }
     ]
   },
@@ -24,19 +29,24 @@
     "btnApply": "Apply",
     "btnReset": "Reset",
     "hospedaje": [
-      { "inputname": "hotel_name", "inputtype": "input", "label": "Name" },
+      { "inputname": "name", "inputtype": "input", "label": "Name" },
       {
         "inputname": "location",
         "inputtype": "combo",
         "label": "Location"
       },
       { "inputname": "capacity", "inputtype": "range", "label": "Capacity" },
-      {
-        "inputname": "nro_rooms",
-        "inputtype": "number",
-        "label": "Nro Rooms"
-      },
       { "inputname": "details", "inputtype": "textarea", "label": "Details" }
+    ],
+    "pasadias": [
+      { "inputname": "name", "inputtype": "input", "label": "Nombre" },
+      {
+        "inputname": "location",
+        "inputtype": "combo",
+        "label": "Localizacion"
+      },
+      { "inputname": "capacity", "inputtype": "range", "label": "Capacidad" },
+      { "inputname": "details", "inputtype": "textarea", "label": "Detalles" }
     ]
   }
 }

@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../../context';
 import lan from './ButtonSettings.data.json';
-import Toggle from 'kromac-ui/dist/Toggle';
+import Toggle from 'kromac-ui-18/dist/Toggle';
+import './ButtonSettings.style.scss';
 
 const ButtonSettings = () => {
   const [isShowModal, setIsShowModal] = useState(false);
