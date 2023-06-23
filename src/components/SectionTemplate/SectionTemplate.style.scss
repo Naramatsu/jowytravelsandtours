@@ -1,4 +1,4 @@
-.panel-section {
+.panel__section {
   margin: 0 2%;
   margin-top: 70px;
   padding-top: 30px;
@@ -15,7 +15,7 @@
     margin-bottom: 40px;
   }
 
-  .panel-section__container {
+  .panel__section__container {
     display: grid;
     gap: 15px;
     grid-column: 4;
@@ -61,8 +61,8 @@
 }
 
 @media (max-width: 850px) {
-  .panel-section {
-    .panel-section__container {
+  .panel__section {
+    .panel__section__container {
       grid-column: 1;
       grid-template-columns: 1fr;
 

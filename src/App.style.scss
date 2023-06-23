@@ -1,8 +1,10 @@
+@import "./variables.scss";
+
 .kromac-menu-hamburger {
   visibility: hidden;
 
   .kromac-hamburger-menu {
-    box-shadow: inset 0 0 5px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: $boxShadowInset5;
     top: 11px;
 
     &.active {

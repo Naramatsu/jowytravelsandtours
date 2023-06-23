@@ -1,16 +1,17 @@
-import React, { useContext, useState } from 'react';
-import { AppContext } from '../../context';
-import lan from './ButtonSettings.data.json';
-import Toggle from 'kromac-ui-18/dist/Toggle';
-import './ButtonSettings.style.scss';
+import React, { useContext, useState } from "react";
+import { AppContext } from "../../context";
+import lan from "./FloatButton.data.json";
+import Toggle from "kromac-ui-18/dist/Toggle";
+import "./FloatButton.style.scss";
+import { BsXCircleFill } from "react-icons/bs";
 
-const ButtonSettings = () => {
+const FloatButton = ({ Icon }) => {
   const [isShowModal, setIsShowModal] = useState(false);
   const hideModal = () => setIsShowModal(false);
   return (
     <>
-      <button className="btn-settings" onClick={() => setIsShowModal(true)}>
-        <img src="Setting_icon.png" alt="button_settings" />
+      <button className="btn__settings" onClick={() => setIsShowModal(true)}>
+        <Icon />
       </button>
       {isShowModal && <ModalSettings onHide={hideModal} />}
     </>
@@ -25,23 +26,21 @@ const ModalSettings = ({ onHide }) => {
     theme,
   } = useContext(AppContext);
 
-  const isDark = theme === 'dark';
-  const isEnglish = appLanguage === 'en';
+  const isDark = theme === "dark";
+  const isEnglish = appLanguage === "en";
   const language = lan[appLanguage];
 
   const handlerChangeLanguage = () => {
-    changeLanguage(appLanguage === 'es' ? 'en' : 'es');
+    changeLanguage(appLanguage === "es" ? "en" : "es");
   };
 
   const handlerChangeTheme = () => {
-    changeTheme(theme === 'dark' ? 'light' : 'dark');
+    changeTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
     <section className={`modal-settings ${theme}`}>
-      <button className="btn-close-modal-settings" onClick={onHide}>
-        X
-      </button>
+      <BsXCircleFill className="btn__close__modal" onClick={onHide} />
       <section className="section-settings">
         <p>{language.language}</p>
         <div>
@@ -54,7 +53,12 @@ const ModalSettings = ({ onHide }) => {
         <p>{language.theme}</p>
         <div>
           <label>{language.light}</label>
-          <Toggle onChange={handlerChangeTheme} checked={isDark} />
+          <Toggle
+            onChange={handlerChangeTheme}
+            onColor="#111b21"
+            offColor="#ffffff"
+            checked={isDark}
+          />
           <label>{language.dark}</label>
         </div>
       </section>
@@ -62,4 +66,4 @@ const ModalSettings = ({ onHide }) => {
   );
 };
 
-export default ButtonSettings;
+export default FloatButton;

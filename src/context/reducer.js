@@ -1,4 +1,9 @@
-import { CHANGE_LANGUAGE, CHANGE_THEME } from './types';
+import {
+  ADD_TO_COMBO,
+  CHANGE_LANGUAGE,
+  CHANGE_THEME,
+  REMOVE_FROM_COMBO,
+} from "./types";
 
 const reducer = (state, action) => {
   const { payload, type } = action;
@@ -12,6 +17,16 @@ const reducer = (state, action) => {
       return {
         ...state,
         language: payload,
+      };
+    case ADD_TO_COMBO:
+      return {
+        ...state,
+        combo: [...state.combo, payload],
+      };
+    case REMOVE_FROM_COMBO:
+      return {
+        ...state,
+        combo: state.combo.filter((item) => item.id !== payload.id),
       };
     default:
       return state;

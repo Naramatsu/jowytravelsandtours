@@ -1,13 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { AppContext } from '../../context';
-import data from '../../data.json';
-import Filter from '../Filter';
-import Items from '../Items';
-import Panel from 'kromac-ui-18/dist/Panel';
-import TableHeader from '../TableHeader';
-import useFormatLocation from '../../hooks/useFormatLocation';
-import { filterByAnyProperty } from '../../utils/dataGrouper';
-import './SectionTemplate.style.scss';
+import React, { useContext, useEffect, useState } from "react";
+import { AppContext } from "../../context";
+import data from "../../data.json";
+import Filter from "../Filter";
+import { filterByAnyProperty } from "../../utils/dataGrouper";
+import Items from "../Items";
+import Panel from "kromac-ui-18/dist/Panel";
+import TableHeader from "../TableHeader";
+import useFormatLocation from "../../hooks/useFormatLocation";
+import "./SectionTemplate.style.scss";
 
 const SectionTemplate = () => {
   const { pathname } = useFormatLocation();
@@ -24,7 +24,7 @@ const SectionTemplate = () => {
   }, [allData]);
 
   const handlerChangeCategory = (category) => {
-    if (category !== '') {
+    if (category !== "") {
       setItems(allData.items.filter((data) => data.category === category));
     } else {
       setItems(allData.items);
@@ -40,10 +40,10 @@ const SectionTemplate = () => {
   };
 
   return (
-    <section className="panel-section">
+    <section className="panel__section">
       <h1>{allData.title}</h1>
       <p className="description">{allData.description}</p>
-      <section className="panel-section__container">
+      <section className="panel__section__container">
         <Panel>
           <Filter items={allData.items} onFilter={onFilter} onReset={onReset} />
         </Panel>

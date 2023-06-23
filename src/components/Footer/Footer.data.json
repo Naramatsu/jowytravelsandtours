@@ -1,0 +1,86 @@
+{
+  "es": {
+    "terms": "Terminos y Condiciones",
+    "showTerms": "Ver terminos y condiciones",
+    "media": "Redes Sociales",
+    "mediaList": [
+      { "name": "WhatsApp", "url": "" },
+      { "name": "Facebook", "url": "" },
+      { "name": "Instagram", "url": "" }
+    ],
+    "mapSite": "Mapa del sitio",
+    "pages": [
+      {
+        "name": "Inicio",
+        "link": "/"
+      },
+      {
+        "name": "Hospedaje",
+        "link": "/hospedaje"
+      },
+      {
+        "name": "Pasadias",
+        "link": "/pasadias"
+      },
+      {
+        "name": "Tures",
+        "link": "/tures"
+      },
+      {
+        "name": "Transportes",
+        "link": "/transportes"
+      },
+      {
+        "name": "Embarcadiones",
+        "link": "/embarcadiones"
+      },
+      {
+        "name": "Sobre Nosotros",
+        "link": "/aboutus"
+      }
+    ],
+    "copyright": "Todos los derechos reservados. Copyright © 2022. All Rights Reserved"
+  },
+  "en": {
+    "terms": "Terms and Conditions",
+    "showTerms": "Watch terms and conditions",
+    "media": "Social media",
+    "mediaList": [
+      { "name": "WhatsApp", "url": "" },
+      { "name": "Facebook", "url": "" },
+      { "name": "Instagram", "url": "" }
+    ],
+    "mapSite": "Site map",
+    "pages": [
+      {
+        "name": "Home",
+        "link": "/"
+      },
+      {
+        "name": "Hosting",
+        "link": "/hospedaje"
+      },
+      {
+        "name": "Day-Pass",
+        "link": "/pasadias"
+      },
+      {
+        "name": "Tours",
+        "link": "/tures"
+      },
+      {
+        "name": "Transports",
+        "link": "/transportes"
+      },
+      {
+        "name": "Boats",
+        "link": "/embarcadiones"
+      },
+      {
+        "name": "About Us",
+        "link": "/aboutus"
+      }
+    ],
+    "copyright": "Copyright © 2022. All Rights Reserved"
+  }
+}

@@ -1,17 +1,17 @@
-import React from 'react';
-import './Inputs.style.scss';
+import React from "react";
+import "./Inputs.style.scss";
 
 const Inputs = (props) => {
   const { inputtype } = props;
   switch (inputtype) {
-    case 'input':
-    case 'number':
+    case "input":
+    case "number":
       return <Input {...props} />;
-    case 'combo':
+    case "combo":
       return <ComboBox {...props} />;
-    case 'range':
+    case "range":
       return <Range {...props} />;
-    case 'textarea':
+    case "textarea":
       return <TextArea {...props} />;
     default:
       return <></>;
@@ -19,11 +19,11 @@ const Inputs = (props) => {
 };
 
 const Input = ({ name, value, onChange, inputtype, ...rest }) => {
-  const inputformat = inputtype === 'input' ? 'text' : inputtype;
+  const inputformat = inputtype === "input" ? "text" : inputtype;
   return (
     <input
       type={inputformat}
-      className="input_format"
+      className="input__format"
       placeholder="Type here"
       name={name}
       value={value}
@@ -36,9 +36,9 @@ const Input = ({ name, value, onChange, inputtype, ...rest }) => {
 const ComboBox = ({ name, value, options, onChange, ...rest }) => (
   <select
     name={name}
-    className="input_format"
+    className="input__format"
     onChange={onChange}
-    value={value || 'all'}
+    value={value || "all"}
     {...rest}
   >
     <option value="">All</option>
@@ -51,7 +51,7 @@ const ComboBox = ({ name, value, options, onChange, ...rest }) => (
 );
 
 const Range = ({ name, value, onChange, ...rest }) => (
-  <section className="input-range">
+  <section className="input__range">
     <label>1 to</label>
     <input
       type="range"

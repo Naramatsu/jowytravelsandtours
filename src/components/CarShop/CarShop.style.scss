@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.carshop {
+  .carshop__content {
+    .carshop__content__items {
+      display: flex;
+      overflow: auto;
+      width: 90%;
+      margin: auto;
+      justify-content: flex-start;
+    }
+  }
+
+  .item__whatsapp__btn {
+    border-radius: 20px;
+    color: #196f3d;
+    border: solid 1px;
+    transition: 0.25s all ease-in-out;
+
+    &:hover {
+      background-color: #196f3d !important;
+      transition: 0.25s all ease-in-out;
+      color: #fff;
+      text-shadow: 0 0 15 rgba(0, 0, 0, 0.5);
+    }
+  }
+}

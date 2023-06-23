@@ -1,13 +1,19 @@
-import React, { useContext, useState } from 'react';
-import { addToCombo } from '../../utils/combo';
-import Card from 'kromac-ui-18/dist/Card';
-import Slider from 'kromac-ui-18/dist/Slider';
-import lan from './Items.data.json';
-import { AppContext } from '../../context';
-import './Items.style.scss';
+import React, { useContext, useState } from "react";
+import { AppContext } from "../../context";
+import Card from "kromac-ui-18/dist/Card";
+import Slider from "kromac-ui-18/dist/Slider";
+import lan from "./Items.data.json";
+import "./Items.style.scss";
+import { BsXCircleFill } from "react-icons/bs";
+import { FaQuestion, FaRegEye, FaShoppingCart } from "react-icons/fa";
 
-const Items = ({ item }) => {
-  const { language: appLanguage, theme } = useContext(AppContext);
+const Items = ({ item, role }) => {
+  const {
+    language: appLanguage,
+    theme,
+    removeItemFromCombo,
+    addItemToCombo,
+  } = useContext(AppContext);
   const language = lan[appLanguage];
   const [showGallery, setShowGallery] = useState(false);
   const {
@@ -21,39 +27,39 @@ const Items = ({ item }) => {
     category,
   } = item;
 
-  const handlerAddToCombo = (item) => {
-    addToCombo(item);
-  };
-
   const handlerAskInWapp = (id) => {
-    const url = new URL('https://wa.me/573103504215');
+    const url = new URL("https://wa.me/573103504215");
     const message = `${language.urlMessage}
     (${category})
     ${id} - ${name},
     capacity: ${capacity}
     `;
-    url.searchParams.set('text', message);
-    window.open(url.href, '_blank');
+    url.searchParams.set("text", message);
+    window.open(url.href, "_blank");
   };
+
+  const isComboItem = role === "combo";
 
   return (
     <section className={`jtyt__item ${theme}`}>
       <Card image={imgPreview} title={name}>
         <section className="item__info">
-          <button
-            onClick={() => setShowGallery(true)}
-            className="item__view-galery"
-          >
-            {language.viewGallery}
-          </button>
+          {!isComboItem && (
+            <button
+              onClick={() => setShowGallery(true)}
+              className="item__view__galery icon__section"
+            >
+              <FaRegEye />
+              {language.viewGallery}
+            </button>
+          )}
           {showGallery && (
             <section className="item__show__gallery">
-              <button
+              <BsXCircleFill
+                className="btn__close__modal"
                 onClick={() => setShowGallery(false)}
-                className="btn-close-modal-settings"
-              >
-                X
-              </button>
+              />
+
               <Slider content={[{ img: imgPreview }]} />
             </section>
           )}
@@ -71,23 +77,36 @@ const Items = ({ item }) => {
               {language.upTo}
               {capacity} {language.persons}
             </p>
-            <p>{nearTo.join(', ')}</p>
-            <p>{details.join(', ')}</p>
+            <p>{nearTo.join(", ")}</p>
+            <p>{details.join(", ")}</p>
           </section>
-          <section className="item__whatsapp">
-            <button
-              className={`item__whatsapp__btn ${theme}`}
-              onClick={() => handlerAskInWapp(id)}
-            >
-              {language.btnAsk}
-            </button>
-            <button
-              className={`item__whatsapp__btn ${theme}`}
-              onClick={() => handlerAddToCombo(item)}
-            >
-              {language.btnCombo}
-            </button>
-          </section>
+          {!isComboItem ? (
+            <section className="item__whatsapp">
+              <button
+                className={`item__whatsapp__btn icon__section ${theme}`}
+                onClick={() => handlerAskInWapp(id)}
+              >
+                <FaQuestion />
+                {language.btnAsk}
+              </button>
+              <button
+                className={`item__whatsapp__btn icon__section ${theme}`}
+                onClick={() => addItemToCombo(item)}
+              >
+                <FaShoppingCart />
+                {language.btnCombo}
+              </button>
+            </section>
+          ) : (
+            <section className="item__whatsapp combo">
+              <button
+                className={`item__whatsapp__btn icon__section ${theme}`}
+                onClick={() => removeItemFromCombo(item)}
+              >
+                {language.removeFromCombo}
+              </button>
+            </section>
+          )}
         </section>
       </Card>
     </section>

@@ -1,6 +1,8 @@
+@import "../../variables.scss";
+
 .table__header {
   align-items: center;
-  background: #17202a;
+  background: $bgHeader;
   border-radius: 20px 20px 0 0;
   color: #fff;
   display: flex;
@@ -15,7 +17,7 @@
     padding: 0.25em;
     text-align: center;
 
-    &.filter_title {
+    &.filter__title {
       width: 100%;
     }
 

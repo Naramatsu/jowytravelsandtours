@@ -1,0 +1,10 @@
+{
+  "es": {
+    "emptyItems": "No hay elementos en el combo.",
+    "urlMessage": "Hola me interesaria cotizar los siguientes productos:"
+  },
+  "en": {
+    "emptyItems": "No items in the combo.",
+    "urlMessage": "Hello, I would like to quote for the following products:"
+  }
+}

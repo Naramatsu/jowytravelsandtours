@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 .footer {
-  background: #17202a;
+  background: $bgHeader;
   color: #fff;
   text-align: center;
 
@@ -17,6 +19,19 @@
 
     ul {
       list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        gap: 15px;
+        margin: auto;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
     }
   }
 

@@ -1,13 +1,18 @@
-import React, { useContext } from 'react';
-import Grid from 'kromac-ui-18/dist/Grid';
-import './AboutUs.style.scss';
-import { AppContext } from '../../context';
+import React, { useContext } from "react";
+import { AppContext } from "../../context";
+import Grid from "kromac-ui-18/dist/Grid";
+import classNames from "classnames";
+import lan from "./AboutUs.data.json";
+import "./AboutUs.style.scss";
 
 const AboutUs = () => {
-  const { theme } = useContext(AppContext);
+  const { theme, language: appLanguage } = useContext(AppContext);
+  const language = lan[appLanguage];
+  const aboutUsClass = classNames("panel__section aboutus", theme);
+
   return (
-    <section className={`panel-section aboutus ${theme}`}>
-      <h1>Sobre Nosotros</h1>
+    <section className={aboutUsClass}>
+      <h1>{language.title}</h1>
       <Grid columns={2}>
         <div>
           <img
@@ -16,26 +21,12 @@ const AboutUs = () => {
           />
         </div>
         <div>
-          <h3>Mision</h3>
-          <p>
-            Espanol Hospedaje - Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer
-            took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged
-          </p>
+          <h3>{language.mision}</h3>
+          <p>{language.misionText}</p>
         </div>
         <div>
-          <h3>Vision</h3>
-          <p>
-            Espanol Hospedaje - Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer
-            took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged
-          </p>
+          <h3>{language.vision}</h3>
+          <p>{language.visionText}</p>
         </div>
         <div>
           <img
@@ -50,15 +41,8 @@ const AboutUs = () => {
           />
         </div>
         <div>
-          <h3>Sobre mi</h3>
-          <p>
-            Espanol Hospedaje - Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer
-            took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged
-          </p>
+          <h3>{language.aboutMe}</h3>
+          <p>{language.aboutMeText}</p>
         </div>
       </Grid>
       <br />

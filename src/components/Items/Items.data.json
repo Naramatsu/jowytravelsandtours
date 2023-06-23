@@ -6,6 +6,7 @@
     "persons": "persona(s)",
     "btnAsk": "Preguntar",
     "btnCombo": "Add al combo",
+    "removeFromCombo": "Quitar del combo",
     "urlMessage": "Hola me interesaria saber un poco mas respecto a este producto:"
   },
   "en": {
@@ -15,6 +16,7 @@
     "persons": "person(s)",
     "btnAsk": "Ask for it",
     "btnCombo": "Add to combo",
+    "removeFromCombo": "Remove from combo",
     "urlMessage": "Hello I wonder know more about this product:"
   }
 }

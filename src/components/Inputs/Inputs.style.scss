@@ -1,15 +1,17 @@
-.filter_container {
+@import "../../variables.scss";
+
+.filter__container {
   overflow-y: auto;
   position: relative;
   padding: 1em;
 
-  .filter_input {
+  .filter__input {
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
     position: relative;
 
-    .input-range {
+    .input__range {
       align-items: center;
       display: flex;
       gap: 10px;
@@ -51,12 +53,12 @@
     }
   }
 
-  .btn_filter_section {
+  .btn__filter__section {
     display: flex;
     justify-content: space-between;
     width: 100%;
 
-    .btn_filter {
+    .btn__filter {
       background-color: #fff;
       border: solid 1px;
       border-radius: 20px;
@@ -66,7 +68,7 @@
       width: 40%;
 
       &.apply {
-        background-color: #17202a;
+        background-color: $bgHeader;
         color: #fff;
       }
     }

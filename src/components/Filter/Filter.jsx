@@ -1,16 +1,18 @@
-import React, { useContext, useState } from 'react';
-import { AppContext } from '../../context';
-import { ignoreDuplicates } from '../../utils/dataGrouper';
-import Inputs from '../Inputs/Inputs';
-import lan from './Filter.data.json';
-import useFormatLocation from '../../hooks/useFormatLocation';
-import './Filter.style.scss';
+import React, { useContext, useState } from "react";
+import { AppContext } from "../../context";
+import classNames from "classnames";
+import { FaCheck, FaFilter, FaUndoAlt } from "react-icons/fa";
+import { ignoreDuplicates } from "../../utils/dataGrouper";
+import Inputs from "../Inputs/Inputs";
+import lan from "./Filter.data.json";
+import useFormatLocation from "../../hooks/useFormatLocation";
+import "./Filter.style.scss";
 
 const intialState = {
-  name: '',
-  location: '',
+  name: "",
+  location: "",
   capacity: 1,
-  details: '',
+  details: "",
 };
 
 const Filter = ({ items, onFilter, onReset }) => {
@@ -41,16 +43,23 @@ const Filter = ({ items, onFilter, onReset }) => {
     });
   };
 
+  const filterContainerClass = classNames(
+    "filter__container kromac-scroll",
+    theme
+  );
+
   return (
     <>
       <section className="table__header">
-        <section className="filter_title">
-          <p>{language.title}</p>
+        <section className="filter__title">
+          <p className="icon__section">
+            <FaFilter /> {language.title}
+          </p>
         </section>
       </section>
-      <section className={`filter_container ${theme} kromac-scroll`}>
+      <section className={filterContainerClass}>
         {sectionData.map((item, index) => (
-          <section key={index} className="filter_input">
+          <section key={index} className="filter__input">
             <label>{item.label}</label>
             <Inputs
               {...item}
@@ -61,12 +70,15 @@ const Filter = ({ items, onFilter, onReset }) => {
             />
           </section>
         ))}
-        <section className="btn_filter_section">
-          <button className="btn_filter apply" onClick={handlerFilter}>
-            {language.btnApply}
+        <section className="btn__filter__section">
+          <button
+            className="btn__filter apply icon__section"
+            onClick={handlerFilter}
+          >
+            <FaCheck /> {language.btnApply}
           </button>
-          <button className="btn_filter" onClick={handlerReset}>
-            {language.btnReset}
+          <button className="btn__filter icon__section" onClick={handlerReset}>
+            <FaUndoAlt /> {language.btnReset}
           </button>
         </section>
       </section>

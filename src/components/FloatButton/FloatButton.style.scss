@@ -1,9 +1,11 @@
-.btn-settings {
+@import "../../variables.scss";
+
+.btn__settings {
   background: #fff;
   border: none;
   border-radius: 50%;
   bottom: 20px;
-  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: $boxShadow10;
   cursor: pointer;
   height: 50px;
   position: fixed;
@@ -11,30 +13,23 @@
   width: 50px;
   z-index: 1000;
 
-  img {
-    filter: contrast(0);
+  svg {
+    @extend .fullScreen;
     padding: 0.5em;
+    margin: auto;
   }
-}
 
-.btn-close-modal-settings {
-  background: #000;
-  border: none;
-  border-radius: 50%;
-  color: #fff;
-  cursor: pointer;
-  height: 24px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 24px;
+  &.carshop {
+    bottom: 80px;
+    padding: 0.25em;
+  }
 }
 
 .modal-settings {
   background: #fff;
   border-radius: 10px;
   bottom: 80px;
-  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: $boxShadow10;
   height: auto;
   padding: 1em;
   position: fixed;
